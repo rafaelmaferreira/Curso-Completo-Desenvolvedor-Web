@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posicionamento</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+	body {
+		background: #61bd8c;
+	}
+	#conteudo{
+		background: #FFFFFF;
+		padding: 10px;
+		width: 600px;
+		
+		margin: 30px auto;/* Deixa a margem automatica de acordo com o texto*/;
+		height: 2500px;
+		margin-top: 120px;
+	}
+	.caixa{
+		background: #1e6f44;
+		width: 100px;
+		height: 100px;
+		color: white;
+	}
+
+	#relative{
+		position :relative; /* relativo a ele mesmo, a posição será reajustada */
+		left: -30px;
+		width: 660px;
+		z-index: 2;
+	}
+	#absoluta{
+		position: absolute; /* Quando utilizado abslute, a div para de se expandir, ficando fora da div */
+		right: 30px;
+		bottom: 0;
+		z-index: 3;
+	}
+	#fixa{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;	
+		background: #000;
+		z-index: 1;	
+	}
+	
+
+	</style>
+
+</head>
+<body>
+
+<div id="conteudo">
+	<h1> Posicionamento </h1>
+
+
+	<h4>Relative</h4>
+	<div id="relative" class="caixa">Relative</div>
+	
+
+	<h4>Absolute</h4>
+	<div id="absoluta" class="caixa">Absolute</div>
+
+	<h4>fixed</h4>
+	<div id="fixa" class="caixa">fixed</div>
+
+
+
+</div>
+
+</body>
+</html>

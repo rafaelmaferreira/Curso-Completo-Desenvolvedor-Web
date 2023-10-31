@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Eventos</title>
+
+		<script type ="text/javascript">
+
+		function msgBoasVidas(){
+			alert('Seja Bem Vindo, você pressinou o botão do mouse sobre esse elemento');
+		}		
+
+		</script>
+		
+	</head>
+	<body onload="alert('A pagina foi totalmente carregada')" >
+
+	<div onclick="msgBoasVidas()" style="background: #CCC; height:150px; width:150px">Um clique</div>
+
+	<div ondblclick="msgBoasVidas()" style="background: #CCC; height:150px; width:150px">Dois cliques</div>
+
+	<div onmousedown="msgBoasVidas()" style="background: #CCC; height:150px; width:150px">Clique fora até mesmo da div</div>
+
+	<div onmouseover="msgBoasVidas()" style="background: #CCC; height:150px; width:150px">Passar o mouse sobre o elemento</div>
+
+	<div onmouseout="msgBoasVidas()" style="background: #CCC; height:150px; width:150px">Passar o mouse sobre o elemento e tirar do elemento</div>
+
+	<input onkeydown="alert('Uma tecla foi pressionada')" type="text">
+
+	<input onkeypress="alert('Uma tecla foi pressionada ou letras')" type="text">
+
+	<input onkeyup="alert('Uma tecla foi solta')" type="text">
+
+	<input onfocus="alert('Elemento focado')" type="text">
+
+	<input onblur="alert('Elemento perdeu o foco')" type="text">
+
+	<select onchange="alert('Opção alterada')">
+		<option value="1">
+		primeira opção
+		</option>
+
+		<option value="2">
+		segunda opção
+		</option>
+	</select>
+
+
+
+	</body>
+</html>

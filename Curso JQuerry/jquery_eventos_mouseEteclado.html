@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Querry Eventos - Mouse</title>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script src="jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			//click
+			//dblclick
+			//mouseouver
+			//mousedown
+			//mouseout
+
+			$('#div1').click(function(){
+				alert('Elemento foi clicado');
+			});
+
+		}); 
+
+		$(document).ready(function () {
+
+			//keypress
+			//keyup
+			//keydown
+
+			$('#campo1').keypress(function(){
+				alert('A tecla foi pressionada');
+			});
+
+		}); 
+
+		$(document).ready(function () {
+
+			//focus
+			//blur
+			//change
+
+			$('#campo2').focus(function(){
+				alert('Elemento focado');
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+
+	<div id="div1" style="height: 150px; width: 150px; background: #CCC">
+		
+	</div>
+
+	<input type="text" id="campo1">
+
+	<input type="text" id="campo2">
+
+</body>
+</html>

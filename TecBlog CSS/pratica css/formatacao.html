@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formatacao</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+	body {
+		background-image: url("imagens/imagem1.png"); /*Utilizando imagem no CSS com texto dentro*/
+		background-repeat: inherit;
+	}
+
+	div{
+			font-size: 60px;
+			font-family: "Georgia";
+			background-color: blue;
+		}
+		
+		.negrito {
+			/*text-decoration: underline;
+			/*text-decoration: overline; text-decoration: line-through; */
+			}
+			p{
+				text-indent: 60px; /* Identa o texto, colocando margem */
+		}
+			}
+		#estilo{
+			font-style: italic;
+			text-align: right;
+			
+		}	
+		h1{
+			color: blue;
+			text-shadow: 5px 2px 4px green;
+		}	
+			#intro .first em {
+		color: pink;
+		background: gray; /* exemplo que aplica só no elemento em, mesmo com classe e id */
+
+	</style>
+
+</head>
+<body>
+
+<div> <p>	Neque porro <span class="negrito" style="cursor:help">quisquam</span> est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+<p>Conteudo1</p>
+<p> <span id="estilo">Conteudo2</p></span>
+</div>
+
+<div id="intro">
+	<p class="first"> This is a <em>Paragraph</em></p>
+	<p> This is a second Paragraph</p>
+	</div>
+	<p class="first"> This is not in the intro section</p>
+	<p> The second parafraph is not in the intro section</p>
+	<h1> Texto Shadow effect</h1>
+
+</div> 
+
+
+
+</body>
+</html>
